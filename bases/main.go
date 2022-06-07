@@ -3,12 +3,13 @@ package main
 import (
 	"fmt"
 	"log"
-	"project/channels"
-	"project/echo"
-	"project/interfaces"
-	"project/model"
-	"project/routines"
 	"strconv"
+
+	"github.com/davidpolaniaac/golang/channels"
+	"github.com/davidpolaniaac/golang/echo"
+	"github.com/davidpolaniaac/golang/interfaces"
+	"github.com/davidpolaniaac/golang/model"
+	"github.com/davidpolaniaac/golang/routines"
 )
 
 func loops() {
