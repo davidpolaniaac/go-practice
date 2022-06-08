@@ -3,6 +3,7 @@ package main
 import (
 	"bufio"
 	"fmt"
+	"log"
 	"os"
 	"strconv"
 	"strings"
@@ -15,7 +16,10 @@ func main() {
 	values := strings.Split(operation, "+")
 	var result int = 0
 	for _, value := range values {
-		data, _ := strconv.Atoi(value)
+		data, err := strconv.Atoi(value)
+		if err != nil {
+			log.Fatalln(err)
+		}
 		result += data
 	}
 	fmt.Println("Total:", result)
