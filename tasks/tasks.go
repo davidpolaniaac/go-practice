@@ -74,4 +74,12 @@ func main() {
 	listTasks.tasks[0].complete = true
 	listTasks.printComplete()
 
+	taskMap := make(map[string]*TaskList)
+
+	taskMap["David"] = &listTasks
+
+	fmt.Printf("%+v\n", taskMap)
+	fmt.Printf("%+v\n", taskMap["David"])
+	taskMap["David"].print()
+
 }
